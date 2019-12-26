@@ -45,4 +45,8 @@ public:
     char* c_str() const{
         return _data;
     }
+
+    bool empty() const {
+        return size()==0;
+    }
 };
