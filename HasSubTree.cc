@@ -15,6 +15,8 @@ bool isSubTree(TreeNode* pRootA, TreeNode* pRootB){
     if(pRootA->val==pRootB->val)
         return isSubTree(pRootA->left,pRootB->left) &&
                 isSubTree(pRootA->right, pRootB->right);
+    else
+        return false;
 }
 
 bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2){
